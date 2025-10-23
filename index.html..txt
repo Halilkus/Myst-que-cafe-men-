@@ -1,0 +1,179 @@
+.html
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mystique Cafe Menü</title>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f6f1e7;
+    color: #3b2f2f;
+  }
+  header {
+    text-align: center;
+    padding: 30px;
+    background-color: #e9decf;
+  }
+  h1 {
+    font-size: 2em;
+    color: #a87a40;
+    margin: 0;
+  }
+  nav {
+    text-align: center;
+    background-color: #f3e9db;
+    padding: 10px;
+  }
+  nav a {
+    margin: 10px;
+    text-decoration: none;
+    color: #3b2f2f;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  nav a:hover {
+    color: #a87a40;
+  }
+  section {
+    padding: 20px;
+    display: none;
+  }
+  section.active {
+    display: block;
+  }
+  h2 {
+    text-align: center;
+    color: #a87a40;
+    border-bottom: 2px solid #a87a40;
+    padding-bottom: 5px;
+  }
+  .item {
+    margin: 15px 0;
+    padding: 10px;
+    border-bottom: 1px dashed #c1a678;
+  }
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #e9decf;
+    font-size: 0.9em;
+  }
+  footer a {
+    color: #a87a40;
+    text-decoration: none;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>☕ Mystique Cafe</h1>
+  <p><i>Lezzetin mistik hali — Taste the Mystery</i></p>
+</header>
+
+<nav>
+  <a href="#" onclick="showMenu('soft')">Soft Drinks</a>
+  <a href="#" onclick="showMenu('coffee')">Coffees</a>
+  <a href="#" onclick="showMenu('beer')">Beers</a>
+  <a href="#" onclick="showMenu('main')">Main Courses</a>
+  <a href="#" onclick="showMenu('pasta')">Pasta</a>
+  <a href="#" onclick="showMenu('snacks')">Snacks</a>
+  <a href="#" onclick="showMenu('desserts')">Desserts</a>
+  <a href="#" onclick="showMenu('hookah')">Hookahs</a>
+</nav>
+
+<!-- Soft Drinks -->
+<section id="soft" class="active">
+  <h2>Soft Drinks</h2>
+  <div class="item">Coca-Cola / Coca-Cola Zero — ₺80</div>
+  <div class="item">Sprite / Fanta — ₺75</div>
+  <div class="item">Ice Tea (Peach / Lemon / Mango) — ₺85</div>
+  <div class="item">Fresh Lemonade — ₺90</div>
+  <div class="item">Fresh Orange Juice — ₺110</div>
+  <div class="item">Milkshake (Strawberry / Banana / Chocolate) — ₺130</div>
+  <div class="item">Atom — ₺140</div>
+</section>
+
+<!-- Coffees -->
+<section id="coffee">
+  <h2>Coffees</h2>
+  <div class="item">Espresso — ₺90</div>
+  <div class="item">Americano — ₺95</div>
+  <div class="item">Latte — ₺110</div>
+  <div class="item">Cappuccino — ₺110</div>
+  <div class="item">Mocha — ₺120</div>
+  <div class="item">Turkish Coffee — ₺100</div>
+</section>
+
+<!-- Beers -->
+<section id="beer">
+  <h2>Beers (33 cl)</h2>
+  <div class="item">Efes Pilsen — ₺150</div>
+  <div class="item">Bomonti — ₺155</div>
+  <div class="item">Budweiser — ₺180</div>
+  <div class="item">Corona — ₺190</div>
+  <div class="item">Heineken — ₺185</div>
+</section>
+
+<!-- Main Courses -->
+<section id="main">
+  <h2>Main Courses</h2>
+  <div class="item">Tavuk Izgara (Göğüs) — ₺250</div>
+  <div class="item">Antrikot Izgara — ₺340</div>
+</section>
+
+<!-- Pasta -->
+<section id="pasta">
+  <h2>Pasta</h2>
+  <div class="item">Spaghetti Napolitan — ₺210</div>
+  <div class="item">Alfredo Chicken Pasta — ₺230</div>
+  <div class="item">Four Cheese Penne — ₺240</div>
+</section>
+
+<!-- Snacks -->
+<section id="snacks">
+  <h2>Snacks & Burgers</h2>
+  <div class="item">Mystique Burger — ₺260</div>
+  <div class="item">Cheese Burger — ₺250</div>
+  <div class="item">Crispy Chicken Burger — ₺240</div>
+  <div class="item">Keyif Tabağı (Sigara Böreği, Sosis, Soğan Halkası, Çıtır Tavuk, Patates Cipsi) — ₺290</div>
+  <div class="item">Çıtır Tavuk Tabağı (Baharatlı Patates Cipsiyle) — ₺280</div>
+</section>
+
+<!-- Desserts -->
+<section id="desserts">
+  <h2>Desserts</h2>
+  <div class="item">Cheesecake — ₺180</div>
+  <div class="item">San Sebastian — ₺190</div>
+  <div class="item">Tiramisu — ₺170</div>
+  <div class="item">Profiterol — ₺160</div>
+  <div class="item">Hayatalı Tatlı — ₺200</div>
+</section>
+
+<!-- Hookahs -->
+<section id="hookah">
+  <h2>Hookahs</h2>
+  <div class="item">Classic Mix — ₺250</div>
+  <div class="item">Mint Lemon — ₺270</div>
+  <div class="item">Watermelon Ice — ₺280</div>
+  <div class="item">Blue Mist — ₺300</div>
+  <div class="item">Mystique Special — ₺320</div>
+</section>
+
+<footer>
+  📸 <a href="https://www.instagram.com/myscafe.2025" target="_blank">@myscafe.2025</a>
+</footer>
+
+<script>
+  function showMenu(id) {
+    document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+  }
+</script>
+
+</body>
+</html>
